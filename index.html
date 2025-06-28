@@ -1,0 +1,254 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Sharma | Interior Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to extend Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F4; /* Soft, warm off-white */
+            color: #3D3D3D; /* Dark gray for text */
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-brand {
+            color: #8D6E63; /* Muted, sophisticated brown */
+        }
+        .bg-brand {
+            background-color: #8D6E63;
+        }
+        .border-brand {
+            border-color: #8D6E63;
+        }
+        .transition-all-300 {
+            transition: all 300ms ease-in-out;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        .project-image {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .project-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            color: #3D3D3D;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #8D6E63;
+            transition: width .3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+            background-color: #8D6E63;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-2xl font-serif font-bold text-brand">Anjali Sharma</a>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="nav-link font-medium">About</a>
+                        <a href="#projects" class="nav-link font-medium">Projects</a>
+                        <a href="#services" class="nav-link font-medium">Services</a>
+                        <a href="#contact" class="bg-brand text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition-all-300">Contact</a>
+                    </div>
+                </nav>
+                <div class="md:hidden">
+                    <!-- Mobile Menu Button (optional) -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-padding text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+                    Crafting Timeless Spaces, <span class="text-brand">Inspired by You.</span>
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
+                    A Mumbai-based interior designer creating functional, beautiful, and deeply personal environments that tell your story.
+                </p>
+                <a href="#projects" class="mt-10 inline-block bg-brand text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 shadow-lg transition-all-300">View My Work</a>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+                 <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2127&auto=format&fit=crop" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/1200x600/F8F7F4/8D6E63?text=Elegant+Living+Space';" 
+                     alt="Elegant and modern living room interior" 
+                     class="rounded-2xl shadow-2xl object-cover w-full h-[300px] md:h-[600px]">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand mb-4">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        I believe great design is a dialogue between a space and its inhabitants. My design philosophy is centered on 'human-centric modernism'—creating environments that are not only beautiful and functional but also resonate with the personalities and lifestyles of those who live and work within them.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        With a background in architecture from Sir J.J. College of Architecture and a passion for sustainable materials, I bring a holistic approach to every project. From our studio in Mumbai, we collaborate with clients to translate their vision into timeless, thoughtful, and inspiring interiors.
+                    </p>
+                    <a href="#contact" class="font-semibold text-brand hover:underline">Let's create together &rarr;</a>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1587582423116-805615de9143?q=80&w=1974&auto=format&fit=crop" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x700/DED9D5/3D3D3D?text=Designer+Portrait';"
+                         alt="Portrait of an interior designer"
+                         class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand">Selected Works</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">A collection of projects that showcase my approach to design and problem-solving.</p>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="mb-24 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1617103996237-703358045330?q=80&w=1964&auto=format&fit=crop"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x500/EAE7E2/8D6E63?text=Juhu+Apartment';"
+                             alt="Bright and airy living room with minimalist decor"
+                             class="rounded-2xl shadow-lg w-full h-full object-cover project-image">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-serif font-semibold mb-2">Serene Juhu Apartment</h3>
+                        <p class="text-brand font-medium mb-4">Location: Mumbai, Maharashtra | Type: Residential | Year: 2025</p>
+                        <p class="text-gray-600">
+                            The client's vision was a peaceful retreat from the city's dynamism. We employed a neutral palette, abundant natural light, and bespoke oak millwork to create a calming, clutter-free sanctuary. The design emphasizes texture and natural materials, fostering a connection to the serene coastal surroundings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-24 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                    <div class="md:order-2">
+                        <img src="https://images.unsplash.com/photo-1554104707-a76b270e4bbb?q=80&w=1974&auto=format&fit=crop" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x500/DED9D5/8D6E63?text=Bandra+Cafe';"
+                             alt="Stylish and warm cafe interior"
+                             class="rounded-2xl shadow-lg w-full h-full object-cover project-image">
+                    </div>
+                    <div class="md:order-1">
+                        <h3 class="text-2xl md:text-3xl font-serif font-semibold mb-2">The Artisan's Corner Café</h3>
+                        <p class="text-brand font-medium mb-4">Location: Bandra, Mumbai | Type: Commercial/Hospitality | Year: 2024</p>
+                        <p class="text-gray-600">
+                            This project was about crafting a community hub. We blended industrial elements with warm, artisanal touches, like handmade tiles and locally sourced wood. The layout encourages interaction, with a mix of cozy nooks and communal tables, creating an inviting atmosphere that feels like a home away from home.
+                        </p>
+                    </div>
+                </div>
+                
+                 <!-- Project 3 -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1600518330182-2d1e3c323c06?q=80&w=2070&auto=format&fit=crop" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x500/EAE7E2/8D6E63?text=Alibaug+Villa';"
+                             alt="Luxury villa with indoor-outdoor living"
+                             class="rounded-2xl shadow-lg w-full h-full object-cover project-image">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-serif font-semibold mb-2">Alibaug Holiday Home</h3>
+                        <p class="text-brand font-medium mb-4">Location: Alibaug, Maharashtra | Type: Residential | Year: 2023</p>
+                        <p class="text-gray-600">
+                            Designed as a weekend getaway, this villa blurs the lines between indoors and outdoors. Large glass panels, a central courtyard, and natural materials like laterite stone and teak wood create a seamless flow. The interiors are relaxed yet sophisticated, perfect for unwinding and entertaining.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand">Our Services</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">From concept to completion, we offer a full range of design services tailored to your needs.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transition-all-300 hover:shadow-lg hover:border-brand/30">
+                        <h3 class="text-xl font-serif font-semibold mb-3">Full-Service Design</h3>
+                        <p class="text-gray-600">A comprehensive service covering every detail from initial concept, space planning, and material selection to project management and final installation.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transition-all-300 hover:shadow-lg hover:border-brand/30">
+                        <h3 class="text-xl font-serif font-semibold mb-3">Kitchen & Bath Design</h3>
+                        <p class="text-gray-600">Specialized design for the most important rooms in your home, focusing on functionality, ergonomics, and high-quality finishes.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200/80 transition-all-300 hover:shadow-lg hover:border-brand/30">
+                        <h3 class="text-xl font-serif font-semibold mb-3">E-Design Consultation</h3>
+                        <p class="text-gray-600">A flexible and accessible online service, providing professional design guidance, mood boards, and shopping lists for clients anywhere in the world.</p>
+                    </div>
+                </div>
+                 <div class="mt-12 text-center">
+                    <h4 class="text-xl font-semibold mb-4">Technical Skills</h4>
+                    <p class="text-gray-600 max-w-3xl mx-auto">AutoCAD, SketchUp + V-Ray, Revit, Adobe Creative Suite, 3D Rendering, Sustainable Design Practices, Project Management</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-brand text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Let's Create Together</h2>
+                <p class="text-lg md:text-xl text-stone-200 mb-8 max-w-2xl mx-auto">
+                    Have a project in mind or simply want to learn more? I'd love to hear from you.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10">
+                    <a href="mailto:hello@anjalisharma.design" class="text-lg bg-white bg-opacity-20 px-6 py-3 rounded-full hover:bg-opacity-30 transition-all-300">hello@anjalisharma.design</a>
+                    <a href="tel:+919876543210" class="text-lg bg-white bg-opacity-20 px-6 py-3 rounded-full hover:bg-opacity-30 transition-all-300">+91 98765 43210</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-100">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; 2025 Anjali Sharma Interior Design. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed with passion in Mumbai, India.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
